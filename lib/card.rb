@@ -1,7 +1,8 @@
+SUITS = ['♦', '♣', '♠', '♥']
+VALUES = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A']
+
 class Card
   # Your code here
-  SUITS = ['♦', '♣', '♠', '♥']
-  VALUES = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A']
 
   attr_reader :value, :suit
 
@@ -25,12 +26,4 @@ class Card
   def to_s
     "#{@value} of #{@suit}"
   end
-
-
-
 end
-#
-# require 'pry'
-# binding.pry
-puts card_1 = Card.new('8', '♣')
-puts card_1.card_type?

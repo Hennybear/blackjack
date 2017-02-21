@@ -1,14 +1,24 @@
+require_relative "card"
+
 class Deck
   # Your code here
-
-  def deck
-    @deck = []
+  attr_accessor :cards
+  def initialize
+    @cards = []
     SUITS.each do |suit|
       VALUES.each do |value|
-        @deck << "#{value}#{suit}"
+        @cards << Card.new(value, suit)
       end
     end
-    @deck
+    @cards.shuffle!
   end
-  
+
+  def deal
+    @cards.pop(2)
+  end
+
+  def remaining
+    @cards.length
+  end
+
 end
