@@ -10,9 +10,9 @@ RSpec.describe Deck do
   end
 
   context 'after player hand is dealt' do
-    it 'should only have 50 cards' do
+    it 'should only have 51 cards' do
       deck.deal
-      expect(deck.remaining).to eq(50)
+      expect(deck.remaining).to eq(51)
     end
   end
 end

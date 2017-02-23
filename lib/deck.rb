@@ -1,5 +1,6 @@
 require_relative "card"
 
+
 class Deck
   # Your code here
   attr_accessor :cards
@@ -14,7 +15,7 @@ class Deck
   end
 
   def deal
-    @cards.pop(2)
+    @cards.pop
   end
 
   def remaining
