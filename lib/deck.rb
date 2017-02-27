@@ -1,5 +1,5 @@
 require_relative "card"
-
+$deck = []
 
 class Deck
   # Your code here
